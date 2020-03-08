@@ -56,3 +56,6 @@
 
 (after! rustic
   (setq rustic-format-on-save t))
+
+(after! go-mode
+  (add-hook 'before-save-hook 'gofmt-before-save))
